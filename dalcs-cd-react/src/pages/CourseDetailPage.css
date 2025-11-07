@@ -1,0 +1,53 @@
+.course-detail-page {
+  padding: 40px 0;
+}
+
+.course-header {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.course-header h1 {
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.course-description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.prerequisites {
+  margin-top: 15px;
+  padding: 10px;
+  background: #f8f9fa;
+  border-left: 4px solid #faf373;
+}
+
+.syllabus-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.syllabus-link:hover {
+  text-decoration: underline;
+}
+
+.comments-section {
+  margin-top: 40px;
+}
+
+.comments-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}

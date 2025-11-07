@@ -1,0 +1,15 @@
+.home-page {
+  padding: 40px 0;
+}
+
+.home-page h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+@media (max-width: 768px) {
+  .home-page h1 {
+    font-size: 28px;
+  }
+}

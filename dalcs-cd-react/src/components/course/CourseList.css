@@ -1,0 +1,18 @@
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.no-courses {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .course-list {
+    grid-template-columns: 1fr;
+  }
+}

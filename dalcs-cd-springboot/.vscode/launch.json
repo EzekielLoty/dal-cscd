@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-DalCscdApplication<dalcs-cd>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.dalcscd.dalcs_cd.DalCscdApplication",
+            "projectName": "dalcs-cd",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

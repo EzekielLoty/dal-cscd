@@ -1,0 +1,53 @@
+.rating-form {
+  background: #f8f9fa;
+  margin-top: 30px;
+}
+
+.rating-form h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.rating-input {
+  margin-bottom: 20px;
+}
+
+.rating-input label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.rating-input input[type="range"] {
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background: #ddd;
+  outline: none;
+  margin: 0;
+}
+
+.rating-input input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #faf373;
+  cursor: pointer;
+}
+
+.rating-input input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #faf373;
+  cursor: pointer;
+  border: none;
+}
+
+.rating-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+}
