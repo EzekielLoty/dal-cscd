@@ -14,8 +14,9 @@ export default function CommentList({ comments }) {
             <span className="comment-date">
               {new Date(comment.createdAt).toLocaleDateString()}
             </span>
+            
           </div>
-          <p className="comment-text">{comment.text}</p>
+          <p className="comment-text">{comment.content}</p>
         </div>
       ))}
     </div>

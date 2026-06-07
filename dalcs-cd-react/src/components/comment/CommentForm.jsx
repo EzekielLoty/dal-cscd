@@ -19,7 +19,7 @@ export default function CommentForm({ courseId, onSuccess }) {
     setLoading(true);
 
     try {
-      await commentApi.create(courseId, { text });
+      await commentApi.create(courseId, { content: text });
       setText('');
       onSuccess();
     } catch (err) {

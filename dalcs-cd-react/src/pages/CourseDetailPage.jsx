@@ -70,6 +70,7 @@ export default function CourseDetailPage() {
         <div className="comments-section">
           <h2>Comments</h2>
           {user && <CommentForm courseId={id} onSuccess={fetchComments} />}
+          {console.log(comments)}
           <CommentList comments={comments} />
         </div>
       </div>
