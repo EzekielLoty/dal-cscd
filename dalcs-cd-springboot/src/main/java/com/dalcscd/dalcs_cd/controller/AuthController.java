@@ -5,6 +5,7 @@ import com.dalcscd.dalcs_cd.dto.AuthResponse;
 import com.dalcscd.dalcs_cd.service.AuthService;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -34,6 +35,15 @@ public class AuthController {
             return ResponseEntity.ok(response);
         } catch (Exception e) {
             return ResponseEntity.status(401).build();
+        }
+    }
+
+    @GetMapping("/me")
+    public ResponseEntity<AuthResponse> me(Authentication authentication) {
+        try {
+            return ResponseEntity.ok(authService.getCurrentUser(authentication.getName()));
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.status(404).build();
         }
     }
 }

@@ -22,6 +22,7 @@ public class User {
     private String email;
 
     @NotBlank
+    @Column(name = "password_hash", nullable = false)
     private String password;
 
     @Enumerated(EnumType.STRING)
